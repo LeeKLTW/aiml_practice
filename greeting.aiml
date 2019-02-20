@@ -1,0 +1,19 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+<aiml>
+
+    <category>
+        <pattern>你好</pattern>
+        <template>
+            嗨，好久不见
+        </template>
+    </category>
+
+    <category>
+        <pattern>你是谁</pattern>
+        <template>
+            我是AIML的Testing
+        </template>
+    </category>
+
+</aiml>
