@@ -60,4 +60,15 @@
        </template>
    </category>
 
+   <category>
+       <pattern>幹</pattern>
+       <template>
+       <random>
+        <li>不要這麼不友善</li>
+        <li>別罵髒話啦</li>
+        <li>有什麼需要幫助的地方嗎？</li>
+       </random>
+       </template>
+   </category>
+
 </aiml>
