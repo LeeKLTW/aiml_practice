@@ -1,8 +1,10 @@
 import aiml
 
-k = aiml.Kernel()
-k.learn("std-startup.xml")
-k.respond("load aiml b")
+# Create the kernel and learn AIML files
+kernel = aiml.Kernel()
+kernel.learn("std-startup.xml")
+kernel.respond("load aiml b")
 
+# Press CTRL-C to break this loop
 while True:
-    print(k.respond(input("> ")))
+    print(kernel.respond(input("Enter your message >> ")))

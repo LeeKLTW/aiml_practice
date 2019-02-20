@@ -1,9 +1,8 @@
-<aiml version="1.0.1"encoding="UTF-8">
-   <!--std-startup.xml-->
+<aiml version="1.0.1" encoding="UTF-8">
     <category>
         <pattern>LOAD AIML B</pattern>
         <template>
-            <learn>/Users/LeeKunLin/Legacy_code/aiml_practice/greeting.aiml</learn>
+            <learn>basic_chat.aiml</learn>
         </template>
     </category>
 </aiml>

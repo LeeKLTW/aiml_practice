@@ -1,19 +1,63 @@
 <aiml version="1.0.1" encoding="UTF-8">
-<!-- basic_chat.aiml -->
-<aiml>
-
     <category>
-        <pattern>你好</pattern>
-        <template>
-            嗨，好久不见
+        <pattern>HELLO</pattern>
+        <template><input/>
+            Well, hello!
         </template>
     </category>
 
     <category>
-        <pattern>你是谁</pattern>
+        <pattern>WHAT ARE YOU</pattern>
         <template>
-            我是AIML的Testing
+            I'm a bot, silly!
         </template>
     </category>
+
+    <category>
+        <pattern>ONE TIME I *</pattern>
+            <template>
+            <input/>
+                <random>
+                    <li>Go on.</li>
+                    <li>How old are you?</li>
+                    <li>Be more specific.</li>
+                    <li>I did not know that.</li>
+                    <li>Are you telling the truth?</li>
+                    <li>I don't know what that means.</li>
+                    <li>Try to tell me that another way.</li>
+                    <li>Are you talking about an animal, vegetable or mineral?</li>
+                    <li>What is it?</li>
+                </random>
+            </template>
+    </category>
+
+    <category>
+      <pattern>MY NAME IS *</pattern>
+      <template>
+      <input/>
+         Hi <set name="user_name"><star/></set>
+      </template>
+    </category>
+
+    <category>
+      <pattern>WHAT IS MY NAME</pattern>
+      <template>
+      <input/>
+          <random>
+            <li>Your name is <get name="user_name"/>.</li>
+            <li>Hello <get name ="user_name"/>! </li>
+          </random>
+      </template>
+   </category>
+
+   <category>
+       <pattern>LAST</pattern>
+       <template>
+       <random>
+        <li>"<input index = "2"/>"??</li>
+        <li><input index = "2"/></li>
+       </random>
+       </template>
+   </category>
 
 </aiml>
