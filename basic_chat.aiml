@@ -53,10 +53,7 @@
    <category>
        <pattern>LAST</pattern>
        <template>
-       <random>
-        <li>"<input index = "2"/>"??</li>
-        <li><input index = "2"/></li>
-       </random>
+       <input index = "2"/>
        </template>
    </category>
 
